@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Organize-se e faça mais em menos tempo</h1>
         <Form addTodo={addTodo}/>
         <TodoList todos={todos} handleTodo={handleTodo} />
       </header>

@@ -1,15 +1,14 @@
-//RECEBER OS DADOS INSERIDOS NO INPUT
-//TER BOTÃO ENVIAR QUE FARÁ ITERAÇÃO NO STATE
-
 import { useState } from "react"
+import './style.css'
 
 export const Form = ({addTodo}) => {
 
     const [itemInput, setItemInput] = useState('')
 
     return (
-        <div>
+        <div className="form">
             <input
+                placeholder="Adicione uma tarefa"
                 onChange={(event) => setItemInput(event.target.value)}
             />
             <button onClick={() => addTodo(itemInput)}>Adicionar tarefa</button>

@@ -1,6 +1,3 @@
-//RENDERIZAR AS TAREFAS
-//BOTÃO DE CONCLUIR AS TAREFAS
-
 export const TodoList = ({todos, handleTodo}) => {
     return(
         <ul>
